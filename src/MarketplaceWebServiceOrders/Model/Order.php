@@ -93,6 +93,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
             'LatestShipDate' => array('FieldValue' => null, 'FieldType' => 'string'),
             'EarliestDeliveryDate' => array('FieldValue' => null, 'FieldType' => 'string'),
             'LatestDeliveryDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'IsPrime' => array('FieldValue' => null, 'FieldType' => 'boolean'),
         );
         parent::__construct($data);
     }
