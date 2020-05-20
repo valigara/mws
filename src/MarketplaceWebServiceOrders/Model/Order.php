@@ -1366,4 +1366,50 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
         return $this;
     }
 
+    /**
+     * Get the value of the IsPrime property.
+     *
+     * @return string IsPrime.
+     */
+    public function getIsPrime()
+    {
+        return $this->_fields['IsPrime']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the IsPrime property.
+     *
+     * @param string $value IsPrime
+     * @return $this This instance
+     */
+    public function setIsPrime($value)
+    {
+        $this->_fields['IsPrime']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Check to see if IsPrime is set.
+     *
+     * @return true if IsPrime is set.
+     */
+    public function isSetIsPrime()
+    {
+        return !is_null($this->_fields['IsPrime']['FieldValue']);
+    }
+
+    /**
+     * Set the value of IsPrime, return this.
+     *
+     * @param IsPrime
+     *             The new value to set.
+     *
+     * @return $this This instance.
+     */
+    public function withIsPrime($value)
+    {
+        $this->setIsPrime($value);
+        return $this;
+    }
+    
 }
