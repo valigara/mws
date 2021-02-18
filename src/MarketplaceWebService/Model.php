@@ -138,6 +138,9 @@ abstract class MarketplaceWebService_Model
      */
     private function escapeXML($str)
     {
+        if ($str instanceof \DateTime) {
+            $str = $str->format('c');
+        }
         $from = array("&", "<", ">", "'", "\"");
         $to = array("&amp;", "&lt;", "&gt;", "&#039;", "&quot;");
         return str_replace($from, $to, $str);
